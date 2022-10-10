@@ -4,14 +4,6 @@ import re
 from multiprocessing import Process
 
 
-# initializing parameters
-# parser = argparse.ArgumentParser(description="Sitemap generator")
-# parser.add_argument('--url', action="store", default="", help="For example https://www.finstead.com")
-# parser.add_argument('--exclude', action="store", default="", help="regex pattern to exclude. For example 'symbol/info' will exclude https://www.finstead.com/symbol/info/ORCL")
-# parser.add_argument('--no-verbose', action="store_true", default="", help="print verbose output")
-# parser.add_argument('--output', action="store", default="sitemap.xml", help="File path for output, if file exists it will be overwritten"), exclude=args.exclude, no_verbose=args.no_verbose
-# # parsing parameters
-# args = parser.parse_args()
 class urlparser:
     def __init__(self,url,exclude = None,no_verbose = False  ):
         self.url = self.normalize(url)
